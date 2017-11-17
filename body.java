@@ -63,7 +63,6 @@ public class body extends JFrame {
 			scan = new Scanner(def);
 			scan.useDelimiter("\n");
 			path = scan.next();
-			System.out.println(path);
 		} catch (FileNotFoundException e) {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
