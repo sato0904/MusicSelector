@@ -159,7 +159,7 @@ public class body extends JFrame {
 		    }
 			try {
 				if(d) {
-					Process p = rt.exec("cmd /c \"C:\\Users\\zougame\\Desktop\\music 1\\" + name + "\"");
+					Process p = rt.exec("cmd /c \"" + path + name + "\"");
 					label.setText("再生中：" + name);
 					p.waitFor();
 					p.destroy();
