@@ -159,7 +159,7 @@ public class body extends JFrame {
 		    }
 			try {
 				if(d) {
-					Process p = rt.exec("cmd /c \"" + path + name + "\"");
+					Process p = rt.exec("cmd /c \"" + path + "\\" + name + "\"");
 					label.setText("再生中：" + name);
 					p.waitFor();
 					p.destroy();
@@ -186,10 +186,10 @@ public class body extends JFrame {
 				path=F.getAbsolutePath();
 				StringBuilder sb = new StringBuilder();
 				sb.append(path);
-				int offset = 0;
+				/*int offset = 0;
 				for(int i=0; i<path.length(); i++){
 					if(path.charAt(i)=='\\'){sb.insert(i+offset, '\\'); offset++;}
-				}
+				}*/
 				path = new String(sb);
 				System.out.println(path);
 				textField_1.setText(path);
